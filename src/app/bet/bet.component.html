@@ -1,12 +1,29 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+  <nav class="pattern-nav navbar navbar-light bg-light">
+      <span class="pattern-amount-money">{{amount}}</span>
+      <span class="pattern-amount-text">AMOUNT</span>
+  </nav>
+
+  <span class="actions navbar navbar-light bg-light">
+  </span>
+
+  <span class="pattern-border-nav navbar navbar-light bg-light">
+    <div class="converter input-group mb-3">
+      <input id="money" type="number" class="form-control" placeholder="Currency converter" aria-label="Currency converter" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" (click)="converter()">Converter</button>
+      </div>
+    </div>
+  </span>
+
 <div class="input-group mb-3 input-money">
   <div class="input-group-prepend">
     <span class="input-group-text">$</span>
     <span class="input-group-text">0.00</span>
   </div>
-  <input type="text" placeholder="Value in dollars" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <input type="number" placeholder="Value in dollars" class="form-control" aria-label="Amount (to the nearest dollar)">
 </div>
 
 <div>
@@ -16,7 +33,6 @@
   <button class="btn btn-danger pattern-btn-red" (click)="betRed()">BET RED</button>
 </div>
 
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -24,3 +40,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <router-outlet></router-outlet>
+

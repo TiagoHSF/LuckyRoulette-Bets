@@ -19,3 +19,52 @@
     right: 7%;
 }
 
+.pattern-nav {
+    right: 17%;
+    position: absolute !important;
+    width: 25% !important;
+    height: 13% !important;
+    border-radius: 25px !important;
+}
+
+.pattern-amount-money {
+    position: absolute;
+    font-weight: 400;
+    font-size: 25px;
+    left: 41%;
+}
+
+.pattern-amount-text {
+    font-weight: 700;
+    font-size: 15px;
+    position: absolute;
+    right: 30%;
+}
+
+.pattern-border-nav {
+    position: absolute;
+    width: 50%;
+    top: 22%;
+    right: 3%;
+    height: 33%;
+    background-color: #f5f5f5 !important;
+    border-radius: 37px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+}
+
+.converter {
+    position: absolute;
+    top: 30%;
+    width: 34%;
+    right: 30%;
+}
+
+.actions {
+    position: absolute;
+    width: 19%;
+    height: 7%;
+    right: 0%;
+    border-radius: 10px;
+}
