@@ -1,17 +1,21 @@
-.bet-btn-green {
-    width: 15%;
-    height: 35px;
-    font-family: system-ui;
-    font-weight: 700;
-    border-color: green;
-    background-color: #98cd98;
+.pattern-btn-green {
+    width: 20%;
+    position: absolute;
+    right: 28%;
+    top: 45%;
 }
 
-.bet-btn-red {
-    width: 15%;
-    height: 35px;
-    font-family: system-ui;
-    font-weight: 700;
-    border-color: rgb(228, 8, 8);
-    background-color: #d46a6a;
+.pattern-btn-red {
+    width: 20%;
+    position: absolute;
+    right: 7%;
+    top: 45%;
 }
+
+.input-money {
+    width: 41%;
+    position: absolute;
+    top: 39%;
+    right: 7%;
+}
+
