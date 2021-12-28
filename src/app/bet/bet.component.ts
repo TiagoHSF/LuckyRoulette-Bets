@@ -8,14 +8,10 @@ import 'sweetalert2/src/sweetalert2.scss'
   styleUrls: ['./bet.component.scss']
 })
 export class BetComponent implements OnInit {
-  amount: number;
-  green: number;
-  red: number;
+
+  amount: number = 4000;
 
   constructor() { 
-    this.amount = 4000;
-    this.green = -50;
-    this.red = 100;
   }
 
   
