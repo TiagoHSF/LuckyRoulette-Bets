@@ -11,6 +11,12 @@ export class BetComponent implements OnInit {
 
   amount: number = 4000;
 
+  realAccount: boolean = true;
+
+  realAccountText: string = "REAL ACCOUNT";
+  demoAccountText: string = "YOU ARE IN DEMO ACCOUNT";
+
+
   constructor() { 
   }
 
@@ -32,6 +38,15 @@ betRed() {
     icon: 'success',
     confirmButtonText: 'GG'
   })
+}
+
+switchAccount(){
+  if(this.realAccount === true){
+    this.realAccountText;
+    console.log()
+  } else {
+    this.demoAccountText
+  }
 }
 
 converter() {

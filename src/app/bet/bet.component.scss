@@ -69,3 +69,21 @@
     right: 0%;
     border-radius: 10px;
 }
+
+.demo-account {
+    position: absolute;
+    top: 10%;
+    right: 48%;
+}
+
+.demo-account-bad {
+    position: absolute;
+    top: 9%;
+    font-size: 30px;
+    right: 90%;
+    font-size: 30px;
+    border-style: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+}
+
