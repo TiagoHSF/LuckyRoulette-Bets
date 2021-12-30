@@ -5,7 +5,7 @@
   <head><script src="https://kit.fontawesome.com/f10cdc4120.js" crossorigin="anonymous"></script></head>
 
   <nav class="pattern-nav navbar navbar-light bg-light">
-      <span class="pattern-amount-money"><i class="fa fa-usd" aria-hidden="true"></i>{{amount}}</span>
+    <button (click)="refresh()" class="fa fa-refresh refresh" aria-hidden="true"></button><span class="pattern-amount-money"><i class="fa fa-usd" aria-hidden="true"></i>{{amount}}</span>
       <span class="pattern-amount-text">AMOUNT</span>
       <button (click)="switchAccount()" class="fa fa-frown-o demo-account-bad" aria-hidden="true"></button><span class="demo-account">{{realAccountText}}</span>
   </nav>

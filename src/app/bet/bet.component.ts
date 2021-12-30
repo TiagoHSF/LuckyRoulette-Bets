@@ -15,6 +15,7 @@ export class BetComponent implements OnInit {
   demoAccountText: any;
 
   constructor() { 
+    this.amount = 4000;
   }
 
   
@@ -23,6 +24,7 @@ export class BetComponent implements OnInit {
   }
 
 betGreen() {
+  this.amount = this.amount + 250;
   Swal.fire({
     title: 'YOU BET IN GREEN!',
     icon: 'success',
@@ -31,6 +33,7 @@ betGreen() {
 }
 
 betRed() {
+  this.amount = this.amount - 250;
   Swal.fire({
     title: 'YOU BET IN RED!',
     icon: 'success',
@@ -41,10 +44,15 @@ betRed() {
 switchAccount(){
   if(this.realAccount === true){
     this.realAccountText = "CONTA REAL";
-    console.log(this.realAccount)
   } if(this.realAccount === false){
-    this.realAccount = "CONTA DEMO";
-    console.log(this.realAccount)
+    this.realAccountText = "CONTA DEMO";
+  }
+  this.realAccount = false;
+}
+
+refresh(){
+  if(this.amount < 4000){
+    this.amount = this.amount = 4000;
   }
 }
 
