@@ -9,19 +9,17 @@ import 'sweetalert2/src/sweetalert2.scss'
 })
 export class BetComponent implements OnInit {
 
-  amount: number = 4000;
-
-  realAccount: boolean = true;
-
-  realAccountText: string = "REAL ACCOUNT";
-  demoAccountText: string = "YOU ARE IN DEMO ACCOUNT";
-
+  amount: any;
+  realAccount: any;
+  realAccountText: any;
+  demoAccountText: any;
 
   constructor() { 
   }
 
   
   ngOnInit(): void {
+    this.realAccount = true;
   }
 
 betGreen() {
@@ -42,10 +40,11 @@ betRed() {
 
 switchAccount(){
   if(this.realAccount === true){
-    this.realAccountText;
-    console.log()
-  } else {
-    this.demoAccountText
+    this.realAccountText = "CONTA REAL";
+    console.log(this.realAccount)
+  } if(this.realAccount === false){
+    this.realAccount = "CONTA DEMO";
+    console.log(this.realAccount)
   }
 }
 
