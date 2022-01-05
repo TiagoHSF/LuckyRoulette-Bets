@@ -42,12 +42,6 @@ betRed() {
 }
 
 switchAccount(){
-  if(this.realAccount === true){
-    this.realAccountText = "CONTA REAL";
-  } if(this.realAccount === false){
-    this.realAccountText = "CONTA DEMO";
-  }
-  this.realAccount = false;
 }
 
 refresh(){
